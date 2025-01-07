@@ -7,6 +7,11 @@
  */
 function convertToCelsius(f) {
   // TODO
+  console.log('fahrenheit is', f);
+  let f = c * 9/5 + 32
+
+  console.log('celsius is', c)
+  return f;
 }
 
 /**
@@ -24,6 +29,8 @@ function convertToCelsius(f) {
  */
 function describeTemperature(f) {
   // TODO
+  let message = '<32 is Very cold'',<64 is cold' 
+  return f;
 }
 
 /**
