@@ -8,10 +8,8 @@
 function convertToCelsius(f) {
   // TODO
   console.log('fahrenheit is', f);
-  let f = c * 9/5 + 32
+  return (fahren - 32) * (5 / 9);
 
-  console.log('celsius is', c)
-  return f;
 }
 
 /**
@@ -29,8 +27,17 @@ function convertToCelsius(f) {
  */
 function describeTemperature(f) {
   // TODO
-  let message = '<32 is Very cold'',<64 is cold' 
-  return f;
+  if (fahren < 32) {
+    return `The temperature ${fahren}°F (${celc}°C) feels very cold.`;
+  } else if (fahren < 64) {
+    return `The temperature ${fahren}°F (${celc}°C) feels cold.`;
+  } else if (fahren < 86) {
+    return `The temperature ${fahren}°F (${celc}°C) feels warm.`;
+  } else if (fahren < 100) {
+    return `The temperature ${fahren}°F (${celc}°C) feels hot.`;
+  } else {
+    return `The temperature ${fahren}°F (${celc}°C) is extremely hot!`;
+  }
 }
 
 /**
@@ -39,6 +46,7 @@ function describeTemperature(f) {
  */
 function getRandomInt(limit) {
   // TODO
+  return Math.floor(Math.random() * (limit + 1));
 }
 
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
